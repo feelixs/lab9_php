@@ -1,4 +1,7 @@
+<?php include 'includes/book.php'; ?>
+
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<title>Lab 9: The Bookworm Store</title>
@@ -27,29 +30,29 @@
 
 	  				<div class="column">
 	  					<img src="images/hunger-games.jpeg" style="width:60%">
-	  					<h5>TITLE</h5>
-	  					<h5>by AUTHOR</h5>
-	  					<!-- SHOW STAR RATINGS -->
-	  					<h5><span class="emphasized">CHECK STOCK</span>
-						<h5>$PRICE</h5>
+	  					<h5><?= $books[0]->title ?></h5>
+	  					<h5>by <?= $books[0]->author ?></h5>
+	  					<?= $books[0]->showRatingStars() ?>
+	  					<h5><span class="emphasized"><?= $books[0]->checkInStock() ?></span>
+						<h5>$<?= $books[0]->price ?></h5>
 	  				</div>
 
 	  				<div class="column">
 	  					<img src="images/catching-fire.jpeg" style="width:60%">
-	  					<h5>TITLE</h5>
-	  					<h5>by AUTHOR</h5>
-	  					<!-- SHOW STAR RATINGS -->
-	  					<h5><span class="emphasized">CHECK STOCK</span>
-						<h5>$PRICE</h5>
+	  					<h5><?= $books[1]->title ?></h5>
+	  					<h5>by <?= $books[1]->author ?></h5>
+	  					<?= $books[1]->showRatingStars() ?>
+	  					<h5><span class="emphasized"><?= $books[1]->checkInStock() ?></span>
+						<h5>$<?= $books[1]->price ?></h5>
 	  				</div>
 
 	  				<div class="column">
 	  					<img src="images/mockingjay.jpeg" style="width:60%">
-	  					<h5>TITLE</h5>
-	  					<h5>by AUTHOR</h5>
-	  					<!-- SHOW STAR RATINGS -->
-	  					<h5><span class="emphasized">CHECK STOCK</span>
-						<h5>$PRICE</h5>
+	  					<h5><?= $books[2]->title ?></h5>
+	  					<h5>by <?= $books[2]->author ?></h5>
+	  					<?= $books[2]->showRatingStars() ?>
+	  					<h5><span class="emphasized"><?= $books[2]->checkInStock() ?></span>
+						<h5>$<?= $books[2]->price ?></h5>
 	  				</div>
 				</div>
 			</div>
